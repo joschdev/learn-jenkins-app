@@ -2,16 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Test default node') {
-            steps {
-                sh '''
-                ps
-                ps -ef
-                whoami
-                pwd
-                '''
-            }
-        }
         stage('Build') {
             agent {
                 docker {
