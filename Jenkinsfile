@@ -7,7 +7,6 @@ pipeline {
                 sh '''
                 ps
                 ps -ef
-                node --version
                 whoami
                 pwd
                 '''
